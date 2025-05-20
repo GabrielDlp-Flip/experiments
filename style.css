@@ -85,3 +85,87 @@ h1 {
 .parsing-error-summary li {
     color: #7b241c; /* Darker red */
 }
+
+/* Piano Keyboard Styles */
+.piano-keyboard-wrapper {
+    display: flex; /* Use flex for horizontal layout of key containers */
+    position: relative; /* For positioning black keys absolutely within */
+    background-color: #333; /* Dark background for the keyboard */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 150px; /* Fixed height for the keyboard area */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden; /* Hide parts of keys if they overflow due to width */
+}
+
+.white-keys-container {
+    display: flex; /* Lay out white keys horizontally */
+    position: relative; /* Context for black keys if they were direct children */
+    height: 100%;
+}
+
+.black-keys-container {
+    display: flex; /* Lay out black keys horizontally (though they'll be positioned absolutely) */
+    position: absolute;
+    top: 0; /* Align to the top of the wrapper */
+    left: 0; /* Align to the left of the wrapper */
+    height: 60%; /* Black keys are shorter */
+    pointer-events: none; /* Allows clicks to go "through" to white keys if needed, though not used yet */
+}
+
+.piano-key {
+    border: 1px solid #222;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    cursor: default; /* Indicate it's not interactive (yet) */
+}
+
+.piano-key.white-key {
+    background-color: #f8f8f8;
+    width: 30px; /* Fixed width for white keys */
+    height: 100%; /* Take full height of their container */
+    z-index: 1; /* White keys are behind black keys */
+    margin-right: -1px; /* Overlap borders slightly */
+}
+
+.piano-key.black-key {
+    background-color: #333;
+    width: 20px; /* Fixed width for black keys */
+    height: 100%; /* Black keys take full height of black-keys-container (which is 60% of wrapper) */
+    z-index: 2; /* Black keys are on top of white keys */
+    position: absolute; /* Crucial for positioning */
+    /* 'left' positioning will be calculated by JavaScript or more complex CSS if needed.
+       For now, we rely on the JS setting style.left if that was kept,
+       or a CSS nth-child approach if key generation is very predictable.
+       Given the dynamic segment, a JS approach for 'left' is more robust if needed.
+       However, the subtask report for step 3 said JS positioning was omitted.
+       We need a strategy here. Let's try a common CSS technique.
+    */
+}
+
+/* Highlighting for played keys */
+.piano-key.played-key { /* Played white key */
+    background-color: #66bb6a; /* Green */
+}
+
+.piano-key.played-black-key { /* Played black key */
+    background-color: #388e3c; /* Darker Green */
+    border-color: #2e7d32;
+}
+
+.no-notes-message {
+    font-style: italic;
+    color: #777;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.unknown-notes-warning {
+    font-size: 0.8em;
+    color: #e74c3c; /* Reddish warning color */
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #fff5f5;
+    border: 1px solid #e74c3c;
+    border-radius: 3px;
+}

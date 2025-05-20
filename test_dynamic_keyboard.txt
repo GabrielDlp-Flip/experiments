@@ -1,0 +1,20 @@
+[[[Keyboard Span Test]]]
+[[Single Note]]
+[Middle C]
+C4
+
+[[Narrow Chord]]
+[C Major Triad]
+C4,E4,G4
+
+[[Wider Chord]]
+[C Major 7th over two octaves]
+C3,E3,G3,B3,C4,E4,G4,B4
+
+[[Chord with only Black Keys]]
+[Pentatonic Black]
+C#4, D#4, F#4, G#4, A#4
+
+[[Chord with Unrecognized]]
+[Mixed Validity]
+C4, XYZ, G4, PQR

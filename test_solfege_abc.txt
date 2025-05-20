@@ -1,0 +1,30 @@
+[[[Opus Test]]]
+[[Solfege Simple]]
+[do re mi]
+do,re,mi
+[Solfege With Accidentals]
+do,mi,sol#
+[Solfege With Octaves]
+fa2,la3,do4
+[Solfege Lowercase]
+solb,si,re#5
+
+[[ABCDEFG Simple]]
+[C E G]
+C,E,G
+[ABCDEFG With Accidentals]
+C,Eb,G#
+[ABCDEFG With Octaves]
+F2,A3,C4
+[ABCDEFG Lowercase]
+gb,b,d#5
+
+[[Mixed Notes]]
+[Mixed Chord]
+do, G, mi#, Bb3, faS4 
+; 'faS4' is F#4 (Solfege 'fa' + Sharp 'S' + octave 4)
+
+[[Unrecognized Notes]]
+[Bad Notes Test]
+C,E,Zebra,solfege,do-re-mi
+; Expect Zebra, solfege, do-re-mi to be unrecognized or partially recognized.

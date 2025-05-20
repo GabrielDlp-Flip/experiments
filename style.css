@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+#fileInput {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#songOutput {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.opus-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #2980b9; /* Blue */
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+}
+
+.section-title {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #27ae60; /* Green */
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.chord-descriptor {
+    font-size: 1.1em;
+    font-style: italic;
+    color: #8e44ad; /* Purple */
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.notes-sequence {
+    font-family: monospace;
+    font-size: 1em;
+    color: #c0392b; /* Red */
+    margin-left: 20px;
+    padding: 5px;
+    background-color: #ecf0f1;
+    border-radius: 3px;
+    display: block; /* Ensures it takes its own line if needed */
+}
+
+.parsing-error-summary {
+    background-color: #ffebee; /* Light pink */
+    border: 1px solid #c0392b; /* Red */
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+.parsing-error-summary h4 {
+    color: #c0392b; /* Red */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.parsing-error-summary ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.parsing-error-summary li {
+    color: #7b241c; /* Darker red */
+}

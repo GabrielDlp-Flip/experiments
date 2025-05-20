@@ -1,0 +1,32 @@
+[[[Opus 1 - Test Song]]]
+[[Verse 1]]
+[Am]
+A, C, E
+multiline, note
+for Am
+[G]
+G, B, D
+[[Chorus]]
+[C]
+C, E, G
+[G]
+G, B, D
+[F]
+F, A, C
+
+[[Orphaned Section]]
+[Orphaned Chord In Orphaned Section]
+orphan, notes, here
+
+[Descriptor directly under Opus (no section)]
+notes, for, it, will, be, error
+
+notes without any descriptor
+
+[[[Opus 2 - Another Piece]]]
+[[Intro]]
+[Smooth Groove]
+C,E,G,Bb
+[[Verse]]
+[Verse Chord 1]
+A,C,D

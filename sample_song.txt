@@ -1,0 +1,9 @@
+[[[Opus 3]]]
+[[verso 1]]
+[mi lindo]
+mi,fa#,la#
+[la feo]
+la,la#,si
+[[coro]]
+[re mayor]
+re,fa#,la
